@@ -36,9 +36,9 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
         
-    - name: Run CAHMS script
+    - name: Run live dashboard script
       run: |
-        python 'py/CAHMS.py'
+        python 'py/ldbTest.py'
       env:
         key: ${{ secrets.key }} # if run.py requires passwords..etc, set it as secrets    
         
