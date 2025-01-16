@@ -2,7 +2,7 @@ from zeep import Client, Settings, xsd
 from zeep.plugins import HistoryPlugin
 import pandas as pd
 
-LDB_TOKEN = '39349d5b-3a5d-47a7-a2ab-e53ecf9ab949'
+LDB_TOKEN = ''
 WSDL = 'http://lite.realtime.nationalrail.co.uk/OpenLDBWS/wsdl.aspx?ver=2021-11-01'
 
 if LDB_TOKEN == '':
