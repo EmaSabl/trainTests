@@ -6,9 +6,9 @@ import os
 LDB_TOKEN = os.getenv('LDB_TOKEN')
 WSDL = 'http://lite.realtime.nationalrail.co.uk/OpenLDBWS/wsdl.aspx?ver=2021-11-01'
 
-if LDB_TOKEN == '':
-    raise Exception("Please configure your OpenLDBWS token in getDepartureBoardExample!")
-
+if not LDB_TOKEN:
+    raise Exception("LDB_TOKEN environment variable is not set!")
+    
 settings = Settings(strict=False)
 
 history = HistoryPlugin()
