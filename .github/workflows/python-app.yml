@@ -36,7 +36,7 @@ jobs:
         
     - name: Run live dashboard script
       env:
-        key: ${{ secrets.LDB_TOKEN  }} 
+        LDB_TOKEN: ${{ secrets.LDB_TOKEN }}
       run: |
         python 'py/ldbTest.py'
         
