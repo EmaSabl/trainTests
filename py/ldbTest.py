@@ -66,7 +66,7 @@ for crs in crs_list:
                 "type": "Arrival",
                 "station": arr.locationName,
                 "sta": service.sta,
-                "destination": service.origin.location[0].locationName,
+                "origin": service.origin.location[0].locationName,
                 "eta": service.eta, 
                 "platform": service.platform,
                 "cancelled": service.isCancelled, 
