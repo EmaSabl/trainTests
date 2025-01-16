@@ -1,8 +1,9 @@
 from zeep import Client, Settings, xsd
 from zeep.plugins import HistoryPlugin
 import pandas as pd
+import os
 
-LDB_TOKEN = ''
+LDB_TOKEN = os.getenv('LDB_TOKEN')
 WSDL = 'http://lite.realtime.nationalrail.co.uk/OpenLDBWS/wsdl.aspx?ver=2021-11-01'
 
 if LDB_TOKEN == '':
