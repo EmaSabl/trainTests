@@ -41,7 +41,7 @@ for crs in crs_list:
                 "Sched.": service.std,
                 "To": service.destination.location[0].locationName,
                 "Est.": service.etd, 
-                "Platform": service.platform, 
+                "Plat.": service.platform, 
                 "cancelled": service.isCancelled, 
                 "cancel_reason": service.cancelReason, 
                 "delay_reason": service.delayReason
@@ -76,7 +76,7 @@ for crs in crs_list:
                 "Sched.": service.sta,
                 "From": service.origin.location[0].locationName,
                 "Est.": service.eta, 
-                "Platform": service.platform,
+                "Plat.": service.platform,
                 "cancelled": service.isCancelled, 
                 "cancel_reason": service.cancelReason, 
                 "delay_reason": service.delayReason
