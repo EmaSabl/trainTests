@@ -4,12 +4,12 @@
 name: Python application
 
 on:
-  # schedule: 
-  #   - cron: "3,18,33,48 * * * *"
-  # push:
-  #   branches: [ "main" ]
-  # pull_request:
-  #   branches: [ "main" ]
+  schedule: 
+    - cron: "3,18,33,48 * * * *"
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
   workflow_dispatch: 
   
 permissions: write-all
