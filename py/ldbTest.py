@@ -76,7 +76,7 @@ for crs in crs_list:
                 "Sched.": service.sta,
                 "From": service.origin.location[0].locationName,
                 "Est.": service.eta, 
-                "platform": service.platform,
+                "Platform": service.platform,
                 "cancelled": service.isCancelled, 
                 "cancel_reason": service.cancelReason, 
                 "delay_reason": service.delayReason
