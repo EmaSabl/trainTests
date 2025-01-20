@@ -37,11 +37,11 @@ for crs in crs_list:
         for service in services:
             depart.append({
                 "type": "Departure",
-                "station": dep.locationName,
-                "std": service.std,
-                "destination": service.destination.location[0].locationName,
-                "etd": service.etd, 
-                "platform": service.platform, 
+                "Departing": dep.locationName,
+                "Sched.": service.std,
+                "To": service.destination.location[0].locationName,
+                "Est.": service.etd, 
+                "Platform": service.platform, 
                 "cancelled": service.isCancelled, 
                 "cancel_reason": service.cancelReason, 
                 "delay_reason": service.delayReason
@@ -51,6 +51,14 @@ for crs in crs_list:
         print(f"Failed to fetch data for CRS: {crs}. Error: {e}")
 
 df_depart = pd.DataFrame(depart)
+
+def combineCanDelays(row):
+    cancel = row['cancel_reason'] if pd.notna(row['cancel_reason']) else ''
+    delay = row['delay_reason'] if pd.notna(row['delay_reason']) else ''
+    return f"{cancel} | {delay}".strip(" | ")
+
+df_depart['Additional info'] = df_depart.apply(combineCanDelays, axis=1)
+
 df_depart.to_csv(r"data/departures.csv", index = False)
 
 
@@ -64,10 +72,10 @@ for crs in crs_list:
         for service in serv_arriv:
             arrive.append({
                 "type": "Arrival",
-                "station": arr.locationName,
-                "sta": service.sta,
-                "origin": service.origin.location[0].locationName,
-                "eta": service.eta, 
+                "To": arr.locationName,
+                "Sched.": service.sta,
+                "From": service.origin.location[0].locationName,
+                "Est.": service.eta, 
                 "platform": service.platform,
                 "cancelled": service.isCancelled, 
                 "cancel_reason": service.cancelReason, 
@@ -77,6 +85,9 @@ for crs in crs_list:
         print(f"Failed to fetch data for CRS: {crs}. Error: {e}")
 
 df_arrive = pd.DataFrame(arrive)
+
+df_arrive['Additional info'] = df_arrive.apply(combineCanDelays, axis=1)
+
 df_arrive.to_csv(r"data/arrivals.csv", index = False)
 
 
