@@ -1,7 +1,6 @@
 type,station,sta,origin,eta,platform,cancelled,cancel_reason,delay_reason
-Arrival,Perth,11:03,Inverness,11:09,4,,,This train has been delayed by a late running train being in front of this one
-Arrival,Perth,11:06,Edinburgh,On time,5,,,
-Arrival,Perth,11:11,Glasgow Queen Street,On time,7,,,
+Arrival,Perth,11:03,Inverness,11:12,4,,,This train has been delayed by a late running train being in front of this one
+Arrival,Perth,11:11,Glasgow Queen Street,11:07,7,,,
 Arrival,Perth,11:15,Aberdeen,On time,1,,,
 Arrival,Perth,11:20,Glasgow Queen Street,On time,2,,,
 Arrival,Perth,11:37,Glasgow Queen Street,On time,2,,,
@@ -9,26 +8,28 @@ Arrival,Perth,11:39,Dundee,On time,1,,,
 Arrival,Perth,11:48,Edinburgh,On time,7,,,
 Arrival,Perth,11:55,Inverness,Cancelled,,True,This train has been cancelled because of a fault on this train,
 Arrival,Perth,12:09,Edinburgh,On time,6,,,
-Arrival,Dundee,10:51,Aberdeen,On time,1,,,
-Arrival,Dundee,11:07,Aberdeen,On time,1,,,
-Arrival,Dundee,11:08,Glasgow Queen Street,On time,4,,,
+Arrival,Perth,12:17,Aberdeen,On time,1,,,
+Arrival,Dundee,11:08,Glasgow Queen Street,11:05,4,,,
 Arrival,Dundee,11:23,Edinburgh,On time,2,,,
-Arrival,Dundee,11:45,Leeds,12:10,4,,,This train has been delayed by a person being hit by a train
+Arrival,Dundee,11:45,Leeds,12:15,4,,,This train has been delayed by a person being hit by a train
 Arrival,Dundee,11:49,Glasgow Queen Street,On time,3,,,
 Arrival,Dundee,11:56,Aberdeen,On time,1,,,
 Arrival,Dundee,12:02,Glasgow Queen Street,On time,4,,,
 Arrival,Dundee,12:08,Aberdeen,On time,1,,,
 Arrival,Dundee,12:22,Edinburgh,On time,2,,,
-Arrival,Aberdeen,10:53,Inverurie,On time,6N,,,
-Arrival,Aberdeen,11:05,Edinburgh,On time,5,,,
-Arrival,Aberdeen,11:23,Inverness,On time,,,,
-Arrival,Aberdeen,11:27,Glasgow Queen Street,On time,,,,
+Arrival,Dundee,12:34,Arbroath,On time,1N,,,
+Arrival,Dundee,12:38,Edinburgh,On time,4,,,
+Arrival,Aberdeen,11:23,Inverness,On time,6N,,,
+Arrival,Aberdeen,11:27,Glasgow Queen Street,11:31,3,,,
 Arrival,Aberdeen,11:45,Montrose,On time,,,,
 Arrival,Aberdeen,11:52,Edinburgh,On time,,,,
 Arrival,Aberdeen,11:53,Inverurie,On time,,,,
 Arrival,Aberdeen,12:20,Inverurie,On time,,,,
 Arrival,Aberdeen,12:40,Glasgow Queen Street,On time,,,,
+Arrival,Aberdeen,12:50,Montrose,On time,,,,
+Arrival,Aberdeen,13:02,Leeds,13:24,,,,This train has been delayed by a person being hit by a train
+Arrival,Aberdeen,13:09,Inverness,On time,,,,
 Arrival,Inverness,11:37,Elgin,On time,,,,
-Arrival,Inverness,12:06,Edinburgh,12:10,,,,This train has been delayed by train crew being delayed
+Arrival,Inverness,12:06,Edinburgh,12:09,,,,This train has been delayed by train crew being delayed
 Arrival,Inverness,12:24,Aberdeen,On time,,,,
 Arrival,Inverness,12:27,Wick,On time,,,,
